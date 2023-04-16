@@ -11,6 +11,7 @@ import { styles } from "./styles";
 import LogoSVG from "../../assets/pigz-logotipo-branco.svg";
 import { Input } from "../../components/Input";
 import { Button } from "../../components/Button";
+import { Divider } from "../../components/Divider";
 
 export function SignIn() {
   return (
@@ -39,7 +40,7 @@ export function SignIn() {
           <View style={styles.footer}>
             <View style={styles.footerTitle}>
               <Text>Entrar com</Text>
-              
+              <Divider/>
 
             </View>
           </View>

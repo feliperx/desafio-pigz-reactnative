@@ -48,6 +48,16 @@ export const styles = StyleSheet.create ({
     registerText: {
         fontSize: 13,
         color: theme.colors.primary
+    }, 
+    footer: {
+        marginTop: 97
+    },
 
+    footerTitle: {
+        flexDirection: 'row'
+    },
+
+    footerTitleText: {
+        paddingRight: 10
     }
 })
