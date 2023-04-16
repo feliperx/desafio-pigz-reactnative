@@ -54,7 +54,8 @@ export const styles = StyleSheet.create ({
     },
 
     footerTitle: {
-        flexDirection: 'row'
+        flexDirection: 'row',
+        marginBottom: 24
     },
 
     footerTitleText: {

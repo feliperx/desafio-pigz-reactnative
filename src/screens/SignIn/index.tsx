@@ -7,11 +7,14 @@ import {
   View,
 } from "react-native";
 
-import { styles } from "./styles";
-import LogoSVG from "../../assets/pigz-logotipo-branco.svg";
 import { Input } from "../../components/Input";
 import { Button } from "../../components/Button";
 import { Divider } from "../../components/Divider";
+import { ButtonExternalService } from "../../components/ButtonExternalService";
+
+import { styles } from "./styles";
+import LogoSVG from "../../assets/pigz-logotipo-branco.svg";
+import GoogleSVG from "../../assets/logo-google.svg";
 
 export function SignIn() {
   return (
@@ -39,10 +42,10 @@ export function SignIn() {
           </View>
           <View style={styles.footer}>
             <View style={styles.footerTitle}>
-              <Text>Entrar com</Text>
+              <Text style={styles.footerTitleText}>Entrar com</Text>
               <Divider/>
-
             </View>
+            <ButtonExternalService title={'Continuar com Google'} icon={GoogleSVG}/>
           </View>
         </View>
       </ScrollView>
