@@ -15,8 +15,16 @@ import { ButtonExternalService } from "../../components/ButtonExternalService";
 import { styles } from "./styles";
 import LogoSVG from "../../assets/pigz-logotipo-branco.svg";
 import GoogleSVG from "../../assets/logo-google.svg";
+import { useNavigation } from "@react-navigation/native";
 
 export function SignIn() {
+
+  const navigation = useNavigation();
+
+  function handleSignIn(){
+    navigation.navigate('Home');
+  }
+
   return (
     <KeyboardAvoidingView>
       <ScrollView showsVerticalScrollIndicator={false}>
@@ -33,7 +41,7 @@ export function SignIn() {
           <TouchableOpacity>
             <Text style={styles.forgotPassword}>Esqueci minha senha</Text>
           </TouchableOpacity>
-          <Button title={"Entrar"} />
+          <Button title={"Entrar"} onPress={handleSignIn}/>
           <View style={styles.register}>
             <Text style={styles.accompanyRegisterText}>Nao tem uma conta?</Text>
             <TouchableOpacity>
@@ -43,9 +51,12 @@ export function SignIn() {
           <View style={styles.footer}>
             <View style={styles.footerTitle}>
               <Text style={styles.footerTitleText}>Entrar com</Text>
-              <Divider/>
+              <Divider />
             </View>
-            <ButtonExternalService title={'Continuar com o Google'} icon={GoogleSVG}/>
+            <ButtonExternalService
+              title={"Continuar com o Google"}
+              icon={GoogleSVG}
+            />
           </View>
         </View>
       </ScrollView>

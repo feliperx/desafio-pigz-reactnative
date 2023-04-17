@@ -1,10 +1,9 @@
 import React from "react";
 import { Text, TouchableOpacity, TouchableOpacityProps } from "react-native";
 import { SvgProps } from "react-native-svg";
-import { LinearGradient } from "expo-linear-gradient";
 
 import { styles } from "./styles";
-import theme from "../../global/styles/theme";
+
 
 type Props = TouchableOpacityProps & {
   title: string;
