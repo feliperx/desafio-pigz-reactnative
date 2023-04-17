@@ -10,7 +10,8 @@ export const styles = StyleSheet.create ({
 
     titleInput: {
         fontSize: 13,
-        // fontFamily: theme.fonts.regular
+        fontFamily: theme.fonts.regular,
+        color: theme.colors.text,
         marginTop: 16,
         marginBottom: 6,
         alignSelf: 'flex-start'
@@ -30,6 +31,7 @@ export const styles = StyleSheet.create ({
     textInput: {
         flex: 1,
         fontSize: 14,
+        color: theme.colors.darkText,
     },
 
     icon: {

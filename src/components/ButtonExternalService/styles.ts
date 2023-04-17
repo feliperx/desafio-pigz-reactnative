@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native"; 
+import theme from "../../global/styles/theme";
 
 
 export const styles = StyleSheet.create ({
@@ -9,6 +10,7 @@ export const styles = StyleSheet.create ({
         alignItems: 'center',
         borderWidth: 1,
         borderRadius: 16,
+        borderColor: theme.colors.border
         
     }, 
 
@@ -16,6 +18,8 @@ export const styles = StyleSheet.create ({
         flex: 1,
         fontSize: 16,
         textAlign: 'center',
+        fontFamily: theme.fonts.medium,
+        color: theme.colors.text
     },
 
     icon: {

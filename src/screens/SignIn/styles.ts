@@ -1,64 +1,73 @@
-import { StyleSheet } from "react-native"; 
+import { StyleSheet } from "react-native";
 import theme from "../../global/styles/theme";
 
+export const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    paddingHorizontal: 24,
+    marginBottom: 30,
+  },
 
-export const styles = StyleSheet.create ({
-    container: {
-        flex: 1,
-        paddingHorizontal: 24, 
-        marginBottom: 30
-    }, 
+  logo: {
+    marginTop: 124,
+    justifyContent: "center",
+    alignItems: "center",
+  },
 
-    logo:{
-        marginTop: 124,
-        justifyContent: 'center',
-        alignItems: 'center',
-    },
+  logoSubtitle: {
+    fontSize: 18,
+    marginTop: 8,
+    fontFamily: theme.fonts.semiBold,
+  },
 
-    logoSubtitle: {
-        fontSize: 18,
-        marginTop: 8
-    }, 
+  content: {
+    marginTop: 37,
+  },
 
-    content: {
-        marginTop: 37,
-    },  
+  title: {
+    fontSize: 16,
+    color: theme.colors.title,
+    fontFamily: theme.fonts.semiBold,
+  },
 
-    title: {
-        fontSize: 16,
-    }, 
+  forgotPassword: {
+    fontSize: 13,
+    fontFamily: theme.fonts.regular,
+    color: theme.colors.text,
+    marginVertical: 24,
+    textDecorationLine: "underline",
+  },
 
-    forgotPassword: {
-        marginVertical: 24, 
-        textDecorationLine: 'underline',
-    },
+  register: {
+    flexDirection: "row",
+    marginTop: 36,
+    justifyContent: "center",
+  },
 
-    register: {
-        flexDirection: 'row',
-        marginTop: 36, 
-        justifyContent: 'center',
+  accompanyRegisterText: {
+    fontFamily: theme.fonts.regular,
+    marginRight: 5,
+    fontSize: 13,
+    color: theme.colors.text,
+  },
 
-    },
+  registerText: {
+    fontFamily: theme.fonts.regular,
+    fontSize: 13,
+    color: theme.colors.primary,
+  },
+  footer: {
+    marginTop: 97,
+  },
 
-    accompanyRegisterText: {
-        marginRight: 5,
-        fontSize: 13
-    }, 
+  footerTitle: {
+    flexDirection: "row",
+    marginBottom: 24,
+  },
 
-    registerText: {
-        fontSize: 13,
-        color: theme.colors.primary
-    }, 
-    footer: {
-        marginTop: 97
-    },
-
-    footerTitle: {
-        flexDirection: 'row',
-        marginBottom: 24
-    },
-
-    footerTitleText: {
-        paddingRight: 10
-    }
-})
+  footerTitleText: {
+    fontSize: 13,
+    fontFamily: theme.fonts.semiBold,
+    color: theme.colors.darkTitle,
+  },
+});

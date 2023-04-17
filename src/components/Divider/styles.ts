@@ -1,4 +1,5 @@
 import { StyleSheet } from "react-native"; 
+import theme from "../../global/styles/theme";
 
 
 export const styles = StyleSheet.create ({
@@ -7,7 +8,8 @@ export const styles = StyleSheet.create ({
         width: '100%',
         borderTopWidth: 1,
         marginTop: 11,
-        marginLeft: 5
+        marginLeft: 5,
+        borderColor: theme.colors.darkTitle
     }, 
 
 

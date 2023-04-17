@@ -12,13 +12,13 @@ type Props = TouchableOpacityProps & {
 };
 
 export function Button({ title, icon: Icon, ...rest }: Props) {
-  const { primary, primary_light } = theme.colors;
+  const { primary, highlight } = theme.colors;
 
   return (
     <TouchableOpacity activeOpacity={0.7} {...rest}>
       <LinearGradient
         style={styles.container}
-        colors={[primary, primary_light]}
+        colors={[primary, highlight]}
       >
         {Icon && <Icon height={22} width={22}/>}
         <Text style={[styles.title, Icon && { marginLeft:8}]}>{title}</Text>

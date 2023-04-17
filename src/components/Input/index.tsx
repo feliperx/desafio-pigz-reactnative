@@ -35,7 +35,10 @@ export function Input({ title, isPassword = false, ...rest }: Props) {
               secureTextEntry={secretPassword}
               {...rest}
             />
-            <TouchableOpacity style={styles.icon} onPress={handleVisiblePassword}>
+            <TouchableOpacity
+              style={styles.icon}
+              onPress={handleVisiblePassword}
+            >
               <Feather
                 name={secretPassword ? "eye" : "eye-off"}
                 size={24}
@@ -44,7 +47,12 @@ export function Input({ title, isPassword = false, ...rest }: Props) {
             </TouchableOpacity>
           </>
         ) : (
-          <TextInput style={styles.textInput} textAlign="left" {...rest} />
+          <TextInput
+            style={styles.textInput}
+            textAlign="left"
+            autoCorrect={false}
+            {...rest}
+          />
         )}
       </View>
     </View>
