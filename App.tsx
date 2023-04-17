@@ -1,13 +1,39 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, View } from 'react-native';
-import { SignIn } from './src/screens/SignIn';
+import { StatusBar } from "expo-status-bar";
+import { SignIn } from "./src/screens/SignIn";
+import { useFonts } from "expo-font";
+import {
+  Poppins_400Regular,
+  Poppins_500Medium,
+  Poppins_600SemiBold,
+  Poppins_700Bold,
+} from "@expo-google-fonts/poppins";
+import {
+  Roboto_400Regular,
+  Roboto_500Medium,
+  Roboto_700Bold,
+} from "@expo-google-fonts/roboto";
+import AppLoading from "expo-app-loading";
+
 
 export default function App() {
+  const [fontsLoaded] = useFonts({
+    Poppins_400Regular,
+    Poppins_500Medium,
+    Poppins_600SemiBold,
+    Poppins_700Bold,
+    Roboto_400Regular,
+    Roboto_500Medium,
+    Roboto_700Bold,
+  });
+
+  if(!fontsLoaded){
+    <AppLoading/>
+  }
+
   return (
     <>
-      <SignIn/>
+      <SignIn />
       <StatusBar style="auto" />
     </>
   );
 }
-

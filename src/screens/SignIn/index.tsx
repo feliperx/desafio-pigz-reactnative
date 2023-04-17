@@ -45,7 +45,7 @@ export function SignIn() {
               <Text style={styles.footerTitleText}>Entrar com</Text>
               <Divider/>
             </View>
-            <ButtonExternalService title={'Continuar com Google'} icon={GoogleSVG}/>
+            <ButtonExternalService title={'Continuar com o Google'} icon={GoogleSVG}/>
           </View>
         </View>
       </ScrollView>
