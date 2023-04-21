@@ -11,7 +11,9 @@ export default {
     descriptionText: "#707070",
     attention: "#E8453E",
     border: "#9F9F9F",
+    borderLight: "#F0F0F0",
     line: "#BABABA",
+    shadow: "#00000029"
   },
 
   fonts: {
