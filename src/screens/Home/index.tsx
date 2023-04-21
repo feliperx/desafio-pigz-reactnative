@@ -42,9 +42,9 @@ export function Home() {
                 <Text style={styles.titleBox}>Iniciar Nova Entrega</Text>
                 <View>
                   <Input title={"Numero de Identificacao"} keyboardType="numeric" />
-                  <Button title={'Escanear QRcode'} icon={QrCordeSVG} />
                 </View>
               </View>
+                  <Button title={'Escanear QRcode'} icon={QrCordeSVG} />
             </Card>
           </View>
         </ScrollView>
