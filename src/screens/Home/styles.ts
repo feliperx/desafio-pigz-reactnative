@@ -6,6 +6,7 @@ export const styles = StyleSheet.create({
     flex: 1
   },
   content: {
-    marginHorizontal: 35
+    marginHorizontal: 35,
+    marginTop: 59
   }
 });

@@ -3,7 +3,7 @@ export default {
     primary: "#FA641E",
     highlight: "#FF881F",
 
-    body: "#FFFFFF",
+    white: "#FFFFFF",
     title: "#222222",
     darkTitle: "#333333",
     text: "#676767",

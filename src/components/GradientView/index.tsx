@@ -14,7 +14,7 @@ export function GradientView({ children, ...rest }: Props) {
 
   return (
     <LinearGradient
-      style={styles.container}
+      style={[styles.container]}
       colors={[primary, highlight]}
       {...rest}
     >

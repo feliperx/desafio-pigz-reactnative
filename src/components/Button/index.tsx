@@ -6,10 +6,8 @@ import {
   View,
 } from "react-native";
 import { SvgProps } from "react-native-svg";
-import { LinearGradient } from "expo-linear-gradient";
 
 import { styles } from "./styles";
-import theme from "../../global/styles/theme";
 import { GradientView } from "../GradientView";
 
 type Props = TouchableOpacityProps & {
@@ -18,7 +16,6 @@ type Props = TouchableOpacityProps & {
 };
 
 export function Button({ title, icon: Icon, ...rest }: Props) {
-  const { primary, highlight } = theme.colors;
 
   return (
     <TouchableOpacity activeOpacity={0.7} {...rest}>
