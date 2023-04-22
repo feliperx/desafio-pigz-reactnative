@@ -1,0 +1,23 @@
+import { StyleSheet } from "react-native"; 
+import theme from "../../global/styles/theme";
+
+
+export const styles = StyleSheet.create ({
+    container: {
+        width: 64,
+        height: 51, 
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderRadius: 16,
+        backgroundColor: theme.colors.primary,
+        marginLeft: 12,
+    }, 
+
+    title: {
+        fontSize: 16,
+        color: '#FFFFFF',
+        fontFamily: theme.fonts.medium,
+        
+    }
+
+})

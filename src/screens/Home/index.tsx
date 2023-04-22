@@ -9,6 +9,7 @@ import { Button } from "../../components/Button";
 
 import { styles } from "./styles";
 import QrCordeSVG from "../../assets/qrcode.svg"
+import { SmallerButton } from "../../components/SmallerButton";
 
 export function Home() {
   return (
@@ -40,11 +41,12 @@ export function Home() {
             <Card>
               <View style={styles.newDeliveryCard}>
                 <Text style={styles.titleBox}>Iniciar Nova Entrega</Text>
-                <View>
+                <View style={styles.newDeliveryCardContent}>
                   <Input title={"Numero de Identificacao"} keyboardType="numeric" />
+                  <SmallerButton title="OK"/>
                 </View>
-              </View>
                   <Button title={'Escanear QRcode'} icon={QrCordeSVG} />
+              </View>
             </Card>
           </View>
         </ScrollView>
