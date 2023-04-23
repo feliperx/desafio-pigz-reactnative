@@ -1,20 +1,19 @@
 import React from "react";
 import {
-  KeyboardAvoidingView,
-  ScrollView,
   Text,
-  TouchableOpacity,
   View,
 } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 
 import { Button } from "../../components/Button";
 import { Divider } from "../../components/Divider";
+import { Header } from "../../components/Header";
+import { Delivery } from "../../components/Delivery";
+import CorrectSVG from "../../assets/correct.svg";
 
 import { styles } from "./styles";
-import { Header } from "../../components/Header";
 import theme from "../../global/styles/theme";
-import { Delivery } from "../../components/Delivery";
+import { ButtonReject } from "../../components/ButtonReject";
 
 export function NewDelivery() {
   const navigation = useNavigation();
@@ -38,7 +37,33 @@ export function NewDelivery() {
           <Text style={styles.title}>Valor da Entrega</Text>
           <Text style={styles.price}>R$ 13,75</Text>
         </View>
-        <Delivery title={"Entrega"} distance="8km" />
+        <View style={{ marginHorizontal: 10, marginTop: 20 }}>
+          <Delivery title={"Entrega"} distance="8km" />
+        </View>
+        <View style={styles.deliveryInfo}>
+          <View style={[styles.deliveryStepDad, {marginTop: 34}]}>
+            <View style={styles.circle} />
+            <Text style={styles.step}>Coleta</Text>
+          </View>
+          <View style={styles.deliveryStepChild}>
+            <View style={styles.shortCircle} />
+            <Text style={styles.stepDescription}>
+              {"Restaurante Recanto da Peixada \nDistancia: 2km"}
+            </Text>
+          </View>
+          <View style={styles.deliveryStepDad}>
+            <View style={styles.circle} />
+            <Text style={styles.step}>Entrega</Text>
+          </View>
+          <View style={styles.deliveryStepChild}>
+            <View style={styles.shortCircle} />
+            <Text style={styles.stepDescription}>
+              {"Av: Cabo dos Soldados - Caranã \nDistancia: 6km"}
+            </Text>
+          </View>
+        </View>
+        <Button title={'Aceitar'} icon={CorrectSVG} style={{marginTop:60, marginBottom: 15}}/>
+        <ButtonReject title={'Rejeitar'}/>
       </View>
     </View>
   );

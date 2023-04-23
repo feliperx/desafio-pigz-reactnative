@@ -14,6 +14,7 @@ export const styles = StyleSheet.create({
   },
   content: {
     marginLeft: 12,
+    justifyContent: 'center'
   },
 
   title: {
@@ -27,4 +28,5 @@ export const styles = StyleSheet.create({
     color: theme.colors.white,
     fontFamily: theme.fonts.regular,
   },
+
 });
