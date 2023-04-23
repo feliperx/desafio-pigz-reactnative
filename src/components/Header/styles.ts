@@ -15,9 +15,10 @@ export const styles = StyleSheet.create ({
         textAlign: 'center',
         fontFamily: theme.fonts.medium,
         color: theme.colors.title,
+        paddingRight: 40
     },
 
     icon: {
-        marginLeft: 16
+        marginLeft: 16,
     }
 })
