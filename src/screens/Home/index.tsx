@@ -6,18 +6,27 @@ import {
   Text,
   View,
 } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 
 import { Header } from "../../components/Header";
 import { GainsDay } from "../../components/GainsDay";
 import { Card } from "../../components/Card";
 import { Input } from "../../components/Input";
 import { Button } from "../../components/Button";
+import { SmallerButton } from "../../components/SmallerButton";
+import QrCordeSVG from "../../assets/qrcode.svg";
 
 import { styles } from "./styles";
-import QrCordeSVG from "../../assets/qrcode.svg";
-import { SmallerButton } from "../../components/SmallerButton";
+
 
 export function Home() {
+
+  const navigation = useNavigation();
+
+  function handleOkButton() {
+    navigation.navigate('NewDelivery');
+  }
+
   return (
     <View style={styles.container}>
       <Header title="Visao Geral" />
@@ -54,7 +63,7 @@ export function Home() {
                     title={"Numero de Identificacao"}
                     keyboardType="numeric"
                   />
-                  <SmallerButton title="OK" />
+                  <SmallerButton title="OK" onPress={handleOkButton}/>
                 </View>
               </View>
               <Button
