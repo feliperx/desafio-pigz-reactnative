@@ -22,7 +22,7 @@ export function SignIn() {
   const navigation = useNavigation();
 
   function handleSignIn(){
-    navigation.navigate('Home');
+    navigation.navigate('Navigation');
   }
 
   return (

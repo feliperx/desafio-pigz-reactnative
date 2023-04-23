@@ -14,8 +14,8 @@ export const styles = StyleSheet.create ({
     }, 
 
     title: {
-        fontSize: 16,
-        color: '#FFFFFF',
+        fontSize: 17,
+        color: theme.colors.white,
         fontFamily: theme.fonts.medium,
         
     }

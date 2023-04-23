@@ -1,5 +1,11 @@
 import React from "react";
-import { KeyboardAvoidingView, ScrollView, Text, View } from "react-native";
+import {
+  KeyboardAvoidingView,
+  Platform,
+  ScrollView,
+  Text,
+  View,
+} from "react-native";
 
 import { Header } from "../../components/Header";
 import { GainsDay } from "../../components/GainsDay";
@@ -8,15 +14,17 @@ import { Input } from "../../components/Input";
 import { Button } from "../../components/Button";
 
 import { styles } from "./styles";
-import QrCordeSVG from "../../assets/qrcode.svg"
+import QrCordeSVG from "../../assets/qrcode.svg";
 import { SmallerButton } from "../../components/SmallerButton";
 
 export function Home() {
   return (
     <View style={styles.container}>
       <Header title="Visao Geral" />
-      <KeyboardAvoidingView>
-        <ScrollView>
+      <KeyboardAvoidingView
+        behavior={Platform.OS === "ios" ? "padding" : "height"}
+      >
+        <ScrollView showsVerticalScrollIndicator={false}>
           <View style={styles.content}>
             <GainsDay />
             <Card>
@@ -42,11 +50,18 @@ export function Home() {
               <View style={styles.newDeliveryCard}>
                 <Text style={styles.titleBox}>Iniciar Nova Entrega</Text>
                 <View style={styles.newDeliveryCardContent}>
-                  <Input title={"Numero de Identificacao"} keyboardType="numeric" />
-                  <SmallerButton title="OK"/>
+                  <Input
+                    title={"Numero de Identificacao"}
+                    keyboardType="numeric"
+                  />
+                  <SmallerButton title="OK" />
                 </View>
-                  <Button title={'Escanear QRcode'} icon={QrCordeSVG} />
               </View>
+              <Button
+                style={{ marginBottom: 24, marginHorizontal: 12 }}
+                title={"Escanear QRcode"}
+                icon={QrCordeSVG}
+              />
             </Card>
           </View>
         </ScrollView>
