@@ -6,6 +6,7 @@ export const styles = StyleSheet.create({
     flex: 1,
     paddingHorizontal: 24,
     marginBottom: 30,
+    backgroundColor: theme.colors.white
   },
 
   logo: {

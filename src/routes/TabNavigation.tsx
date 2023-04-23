@@ -31,10 +31,10 @@ export default function TabNavigation() {
       }
     >
       <Screen
-        name="Ralatorio"
+        name="Ralatório"
         component={Home}
         options={{
-          tabBarLabel: "Relatorio",
+          tabBarLabel: "Relatório",
           tabBarIcon: ({ color }) => (
             <Ionicons name="md-newspaper-outline" size={28} color={color} />
           ),
@@ -44,7 +44,7 @@ export default function TabNavigation() {
         name="Home"
         component={Home}
         options={{
-          tabBarLabel: "Visao Geral",
+          tabBarLabel: "Visão Geral",
           tabBarIcon: ({ color }) => (
             <Feather name="home" size={28} color={color} />
           ),

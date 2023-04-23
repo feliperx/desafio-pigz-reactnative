@@ -14,7 +14,7 @@ import {
 import AppLoading from "expo-app-loading";
 
 import { Routes } from "./src/routes";
-import { SignIn } from "./src/screens/SignIn";
+import { BackGround } from "./src/components/BackGround";
 
 
 export default function App() {
@@ -33,9 +33,12 @@ export default function App() {
   }
 
   return (
-    <>
-      <StatusBar style="auto" />
+    <BackGround>
+      <StatusBar
+        backgroundColor={"transparent"}
+        translucent
+      />
       <Routes/>
-    </>
+    </BackGround>
   );
 }

@@ -2,9 +2,8 @@ import React from "react";
 import { createStackNavigator } from "@react-navigation/stack";
 
 import { SignIn } from "../screens/SignIn";
-import { Home } from "../screens/Home";
-import TabNavigation from "./TabNavigation";
 import { NewDelivery } from "../screens/NewDelivery";
+import TabNavigation from "./TabNavigation";
 
 
 const { Navigator, Screen } = createStackNavigator();

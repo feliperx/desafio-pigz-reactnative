@@ -16,6 +16,7 @@ import { styles } from "./styles";
 import LogoSVG from "../../assets/pigz-logotipo-branco.svg";
 import GoogleSVG from "../../assets/logo-google.svg";
 import { useNavigation } from "@react-navigation/native";
+import { BackGround } from "../../components/BackGround";
 
 export function SignIn() {
 
@@ -28,6 +29,7 @@ export function SignIn() {
   return (
     <KeyboardAvoidingView>
       <ScrollView showsVerticalScrollIndicator={false}>
+        <BackGround>
         <View style={styles.container}>
           <View style={styles.logo}>
             <LogoSVG />
@@ -59,6 +61,7 @@ export function SignIn() {
             />
           </View>
         </View>
+        </BackGround>
       </ScrollView>
     </KeyboardAvoidingView>
   );

@@ -17,7 +17,7 @@ export const styles = StyleSheet.create ({
         fontSize: 17,
         color: theme.colors.white,
         fontFamily: theme.fonts.medium,
-        
+        paddingTop: 5
     }
 
 })

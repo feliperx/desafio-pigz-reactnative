@@ -13,7 +13,7 @@ import { GainsDay } from "../../components/GainsDay";
 import { Card } from "../../components/Card";
 import { Input } from "../../components/Input";
 import { Button } from "../../components/Button";
-import { SmallerButton } from "../../components/SmallerButton";
+import { ButtonShort } from "../../components/ButtonShort";
 import QrCordeSVG from "../../assets/qrcode.svg";
 
 import { styles } from "./styles";
@@ -29,7 +29,7 @@ export function Home() {
 
   return (
     <View style={styles.container}>
-      <Header title="Visao Geral" />
+      <Header title="Visão Geral" />
       <KeyboardAvoidingView
         behavior={Platform.OS === "ios" ? "padding" : "height"}
       >
@@ -60,10 +60,10 @@ export function Home() {
                 <Text style={styles.titleBox}>Iniciar Nova Entrega</Text>
                 <View style={styles.newDeliveryCardContent}>
                   <Input
-                    title={"Numero de Identificacao"}
+                    title={"Número de Identificação"}
                     keyboardType="numeric"
                   />
-                  <SmallerButton title="OK" onPress={handleOkButton}/>
+                  <ButtonShort title="OK" onPress={handleOkButton}/>
                 </View>
                 <Button
                   style={{ marginTop: 18 }}

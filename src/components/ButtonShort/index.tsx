@@ -12,7 +12,7 @@ type Props = TouchableOpacityProps & {
   title: string;
 };
 
-export function SmallerButton({ title, ...rest }: Props) {
+export function ButtonShort({ title, ...rest }: Props) {
 
   return (
     <TouchableOpacity style={{alignSelf: 'flex-end'}}activeOpacity={0.7} {...rest}>
