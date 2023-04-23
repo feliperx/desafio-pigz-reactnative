@@ -1,8 +1,8 @@
 # Desafio Pigz :pig: 
 
 Desafio para a vaga de desenvolvedor front-end mobile da Pigz. 
+<br><br>
 
-<br>
 ### :pig_nose: Desafio 
 Criar as primeiras telas de um aplicativo para entregadores com uma tela de login, uma dashboard com informações sobre as entregas e uma tela de acompanhamento de uma entrega em específico.
 <br><br>
