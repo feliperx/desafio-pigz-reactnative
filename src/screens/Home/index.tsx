@@ -65,12 +65,12 @@ export function Home() {
                   />
                   <SmallerButton title="OK" onPress={handleOkButton}/>
                 </View>
+                <Button
+                  style={{ marginTop: 18 }}
+                  title={"Escanear QRcode"}
+                  icon={QrCordeSVG}
+                />
               </View>
-              <Button
-                style={{ marginBottom: 24, marginHorizontal: 12 }}
-                title={"Escanear QRcode"}
-                icon={QrCordeSVG}
-              />
             </Card>
           </View>
         </ScrollView>

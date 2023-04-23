@@ -50,7 +50,7 @@ export const styles = StyleSheet.create({
   },
 
   newDeliveryCard: {
-    height: 144,
+    height: 206,
     padding: 12,
   },
 

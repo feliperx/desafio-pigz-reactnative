@@ -8,7 +8,7 @@ export default {
     darkTitle: "#333333",
     text: "#676767",
     darkText: "#4B4B4B",
-    descriptionText: "#707070",
+    gray: "#707070",
     attention: "#E8453E",
     border: "#9F9F9F",
     borderLight: "#F0F0F0",
