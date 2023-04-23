@@ -4,6 +4,9 @@ import theme from "../../global/styles/theme";
 
 export const styles = StyleSheet.create ({
     container: {
-        borderRadius: 16,
+        flex: 1,
+        backgroundColor: 'theme.colors.white'
     }, 
+
+
 })

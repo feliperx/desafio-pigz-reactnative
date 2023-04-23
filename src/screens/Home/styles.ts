@@ -4,6 +4,7 @@ import theme from "../../global/styles/theme";
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
+    backgroundColor: theme.colors.white
   },
   content: {
     marginHorizontal: 35,
@@ -53,4 +54,10 @@ export const styles = StyleSheet.create({
     height: 206,
     padding: 12,
   },
+
+  newDeliveryCardContent: {
+    marginTop: -8,
+    flexDirection: 'row', 
+    justifyContent: 'space-between',
+  }
 });

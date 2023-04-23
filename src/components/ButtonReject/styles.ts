@@ -4,21 +4,22 @@ import theme from "../../global/styles/theme";
 
 export const styles = StyleSheet.create ({
     container: {
-        marginTop: 50, 
+        width: '100%',
+        height: 48, 
         flexDirection: 'row',
         alignItems: 'center',
+        justifyContent: 'center',
+        borderRadius: 16,
+        borderWidth: 1,
+        borderColor: theme.colors.primary
     }, 
 
     title: {
-        flex: 1,
-        fontSize: 18,
-        textAlign: 'center',
+        fontSize: 16,
+        color: theme.colors.primary,
         fontFamily: theme.fonts.medium,
-        color: theme.colors.title,
-        paddingRight: 40
-    },
-
-    icon: {
-        marginLeft: 16,
+        marginLeft: 8,
+        
     }
+
 })

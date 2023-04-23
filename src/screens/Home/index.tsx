@@ -1,21 +1,39 @@
 import React from "react";
-import { KeyboardAvoidingView, ScrollView, Text, View } from "react-native";
+import {
+  KeyboardAvoidingView,
+  Platform,
+  ScrollView,
+  Text,
+  View,
+} from "react-native";
+import { useNavigation } from "@react-navigation/native";
 
 import { Header } from "../../components/Header";
 import { GainsDay } from "../../components/GainsDay";
 import { Card } from "../../components/Card";
 import { Input } from "../../components/Input";
 import { Button } from "../../components/Button";
+import { ButtonShort } from "../../components/ButtonShort";
+import QrCordeSVG from "../../assets/qrcode.svg";
 
 import { styles } from "./styles";
-import QrCordeSVG from "../../assets/qrcode.svg"
+
 
 export function Home() {
+
+  const navigation = useNavigation();
+
+  function handleOkButton() {
+    navigation.navigate('NewDelivery');
+  }
+
   return (
     <View style={styles.container}>
-      <Header title="Visao Geral" />
-      <KeyboardAvoidingView>
-        <ScrollView>
+      <Header title="Visão Geral" />
+      <KeyboardAvoidingView
+        behavior={Platform.OS === "ios" ? "padding" : "height"}
+      >
+        <ScrollView showsVerticalScrollIndicator={false}>
           <View style={styles.content}>
             <GainsDay />
             <Card>
@@ -40,11 +58,19 @@ export function Home() {
             <Card>
               <View style={styles.newDeliveryCard}>
                 <Text style={styles.titleBox}>Iniciar Nova Entrega</Text>
-                <View>
-                  <Input title={"Numero de Identificacao"} keyboardType="numeric" />
+                <View style={styles.newDeliveryCardContent}>
+                  <Input
+                    title={"Número de Identificação"}
+                    keyboardType="numeric"
+                  />
+                  <ButtonShort title="OK" onPress={handleOkButton}/>
                 </View>
+                <Button
+                  style={{ marginTop: 18 }}
+                  title={"Escanear QRcode"}
+                  icon={QrCordeSVG}
+                />
               </View>
-                  <Button title={'Escanear QRcode'} icon={QrCordeSVG} />
             </Card>
           </View>
         </ScrollView>
