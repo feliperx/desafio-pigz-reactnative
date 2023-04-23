@@ -3,10 +3,15 @@ import { NavigationContainer } from "@react-navigation/native";
 
 import { AppRoutes } from "./app.routes";
 
+type Props = {
+  onReady: () => void;
+}
 
-export function Routes() {
+export function Routes({onReady} : Props) {
   return (
-    <NavigationContainer>
+    <NavigationContainer
+      onReady={onReady}
+    >
       <AppRoutes />
     </NavigationContainer>
   );

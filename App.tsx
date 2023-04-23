@@ -1,4 +1,6 @@
+import { useCallback, useEffect } from "react";
 import { StatusBar } from "expo-status-bar";
+import SplashScreen from "expo-splash-screen";
 import { useFonts } from "expo-font";
 import {
   Poppins_400Regular,
@@ -11,10 +13,10 @@ import {
   Roboto_500Medium,
   Roboto_700Bold,
 } from "@expo-google-fonts/roboto";
-import AppLoading from "expo-app-loading";
+
+import { BackGround } from "./src/components/BackGround";
 
 import { Routes } from "./src/routes";
-import { BackGround } from "./src/components/BackGround";
 
 
 export default function App() {
@@ -28,8 +30,21 @@ export default function App() {
     Roboto_700Bold,
   });
 
-  if(!fontsLoaded){
-    <AppLoading/>
+  useEffect(() => {
+    async function prepare() {
+      await SplashScreen.preventAutoHideAsync();
+    }
+    prepare();
+  }, []);
+
+  const onLayoutRootView = useCallback(async () => {
+    if (fontsLoaded) {
+      await SplashScreen.hideAsync();
+    }
+  }, [fontsLoaded]);
+
+  if (!fontsLoaded) {
+    return null;
   }
 
   return (
@@ -38,7 +53,7 @@ export default function App() {
         backgroundColor={"transparent"}
         translucent
       />
-      <Routes/>
+      <Routes onReady={onLayoutRootView}/>
     </BackGround>
   );
 }

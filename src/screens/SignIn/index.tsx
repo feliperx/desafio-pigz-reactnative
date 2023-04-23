@@ -30,7 +30,6 @@ export function SignIn() {
   return (
     <KeyboardAvoidingView>
       <ScrollView showsVerticalScrollIndicator={false}>
-        <BackGround>
         <View style={styles.container}>
           <View style={styles.logo}>
             <LogoSVG />
@@ -62,7 +61,6 @@ export function SignIn() {
             />
           </View>
         </View>
-        </BackGround>
       </ScrollView>
     </KeyboardAvoidingView>
   );
