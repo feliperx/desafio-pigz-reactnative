@@ -8,6 +8,7 @@ import {
 
 import { styles } from "./styles";
 
+
 type Props = TouchableOpacityProps & {
   title: string;
 };

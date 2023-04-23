@@ -6,17 +6,18 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 
 import { Input } from "../../components/Input";
 import { Button } from "../../components/Button";
 import { Divider } from "../../components/Divider";
 import { ButtonExternalService } from "../../components/ButtonExternalService";
+import { BackGround } from "../../components/BackGround";
 
 import { styles } from "./styles";
 import LogoSVG from "../../assets/pigz-logotipo-branco.svg";
 import GoogleSVG from "../../assets/logo-google.svg";
-import { useNavigation } from "@react-navigation/native";
-import { BackGround } from "../../components/BackGround";
+
 
 export function SignIn() {
 
@@ -45,7 +46,7 @@ export function SignIn() {
           </TouchableOpacity>
           <Button title={"Entrar"} onPress={handleSignIn}/>
           <View style={styles.register}>
-            <Text style={styles.accompanyRegisterText}>Nao tem uma conta?</Text>
+            <Text style={styles.accompanyRegisterText}>Não tem uma conta?</Text>
             <TouchableOpacity>
               <Text style={styles.registerText}>Crie agora!</Text>
             </TouchableOpacity>

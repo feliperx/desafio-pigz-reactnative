@@ -5,11 +5,9 @@ import { AntDesign, Feather, Ionicons } from "@expo/vector-icons";
 import { Home } from "../screens/Home";
 import theme from "../global/styles/theme";
 
-const {Navigator, Screen} = createBottomTabNavigator();
+const { Navigator, Screen } = createBottomTabNavigator();
 
 export default function TabNavigation() {
-
-
   return (
     <Navigator
       initialRouteName="Home"
@@ -26,9 +24,8 @@ export default function TabNavigation() {
         },
         tabBarStyle: {
           height: 83,
-        }
-      }
-      }
+        },
+      }}
     >
       <Screen
         name="Ralatório"

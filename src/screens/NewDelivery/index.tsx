@@ -3,7 +3,6 @@ import {
   Text,
   View,
 } from "react-native";
-import { useNavigation } from "@react-navigation/native";
 
 import { Button } from "../../components/Button";
 import { Divider } from "../../components/Divider";
@@ -16,7 +15,6 @@ import theme from "../../global/styles/theme";
 import { ButtonReject } from "../../components/ButtonReject";
 
 export function NewDelivery() {
-  const navigation = useNavigation();
 
   return (
     <View style={styles.container}>
@@ -28,7 +26,7 @@ export function NewDelivery() {
             <Text style={styles.timeOrIdValues}>30 Min</Text>
           </View>
           <View style={styles.timeOrId}>
-            <Text style={styles.title}>Numero de ID</Text>
+            <Text style={styles.title}>Número de ID</Text>
             <Text style={styles.timeOrIdValues}>#6789</Text>
           </View>
         </View>
@@ -48,7 +46,7 @@ export function NewDelivery() {
           <View style={styles.deliveryStepChild}>
             <View style={styles.shortCircle} />
             <Text style={styles.stepDescription}>
-              {"Restaurante Recanto da Peixada \nDistancia: 2km"}
+              {"Restaurante Recanto da Peixada \nDistância: 2km"}
             </Text>
           </View>
           <View style={styles.deliveryStepDad}>
@@ -58,7 +56,7 @@ export function NewDelivery() {
           <View style={styles.deliveryStepChild}>
             <View style={styles.shortCircle} />
             <Text style={styles.stepDescription}>
-              {"Av: Cabo dos Soldados - Caranã \nDistancia: 6km"}
+              {"Av: Cabo dos Soldados - Caranã \nDistância: 6km"}
             </Text>
           </View>
         </View>

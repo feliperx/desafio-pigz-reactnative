@@ -4,74 +4,72 @@ import theme from "../../global/styles/theme";
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: theme.colors.white
+    backgroundColor: theme.colors.white,
   },
 
   content: {
     paddingHorizontal: 24,
-    marginTop: 59
+    marginTop: 59,
   },
 
   timeAndIdDelivery: {
     flexDirection: "row",
     paddingHorizontal: 40,
-    justifyContent: 'space-between'
+    justifyContent: "space-between",
   },
   timeOrId: {
-    alignItems: 'center',
-
+    alignItems: "center",
   },
   title: {
     fontFamily: theme.fonts.regular,
     fontSize: 14,
-    color: theme.colors.gray
+    color: theme.colors.gray,
   },
   timeOrIdValues: {
     fontFamily: theme.fonts.bold,
     fontSize: 20,
-    color: theme.colors.primary
+    color: theme.colors.primary,
   },
 
   deliveryPrice: {
-    alignItems: 'center',
+    alignItems: "center",
     marginTop: 20,
   },
 
   price: {
     fontFamily: theme.fonts.bold,
     fontSize: 35,
-    color: theme.colors.primary
+    color: theme.colors.primary,
+    marginTop: -6,
   },
   deliveryInfo: {
     height: 174,
     marginLeft: 42,
     borderLeftWidth: 1,
-    borderColor: theme.colors.border
+    borderColor: theme.colors.border,
   },
   deliveryStepDad: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginTop: 20
+    flexDirection: "row",
+    alignItems: "center",
+    marginTop: 20,
   },
   circle: {
     width: 15,
     height: 15,
     backgroundColor: theme.colors.primary,
     borderRadius: 15,
-    marginLeft: -8.5
-
+    marginLeft: -8.5,
   },
   step: {
     fontSize: 18,
     fontFamily: theme.fonts.medium,
     color: theme.colors.primary,
     marginLeft: 9,
-    paddingTop: 3
+    paddingTop: 3,
   },
 
   deliveryStepChild: {
-    flexDirection: 'row',
-
+    flexDirection: "row",
   },
   shortCircle: {
     width: 8,
@@ -80,17 +78,13 @@ export const styles = StyleSheet.create({
     borderRadius: 4,
     borderColor: theme.colors.primary,
     marginLeft: -5,
-    backgroundColor: 'white',
-    marginTop: 7
-
+    backgroundColor: "white",
+    marginTop: 7,
   },
   stepDescription: {
-    fontSize: 14, 
+    fontSize: 14,
     fontFamily: theme.fonts.regular,
     color: theme.colors.gray,
-    marginLeft: 12
+    marginLeft: 12,
   },
-
-
-
 });
