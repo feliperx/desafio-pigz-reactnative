@@ -16,13 +16,13 @@ Todo o material necessário para criação das telas, incluindo cores, imagens e
 
 ### :sparkles: Tecnologias
 
-- [ ] React Native
-- [ ] Typescript
-- [ ] Expo
-- [ ] Gradient colors
-- [ ] Expo Google Fonts
-- [ ] React Navigation Stack
-- [ ] React Navigation Tab
+- [X] React Native
+- [X] Typescript
+- [X] Expo
+- [X] Gradient colors
+- [X] Expo Google Fonts
+- [X] React Navigation Stack
+- [X] React Navigation Tab
 <br>
 
 ### 🚀 Iniciando
